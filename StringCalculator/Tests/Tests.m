@@ -31,6 +31,10 @@
     XCTAssertEqual(300, [NSString Add:@"100,200"]);
 }
 
+- (void)testUnknownNumberOfNumbers {
+    // 2. Allow the Add method to handle an unknown amount of numbers
+    XCTAssertEqual(434, [NSString Add:@"1,2,1,30,100,200,100"]);
+}
 
 
 @end
