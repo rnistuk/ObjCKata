@@ -36,5 +36,11 @@
     XCTAssertEqual(434, [NSString Add:@"1,2,1,30,100,200,100"]);
 }
 
+- (void)testAddNewLineDelimiterHandling {
+    // Allow the Add method to handle new lines between numbers (instead of
+    // commas).
+    XCTAssertEqual(6, [NSString Add:@"1\n2,3"]);
+}
+
 
 @end
