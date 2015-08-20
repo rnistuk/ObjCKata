@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0260C2B91B855A8A00FF797A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260C2B81B855A8A00FF797A /* main.m */; };
 		0260C2C81B855AC500FF797A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260C2C71B855AC500FF797A /* Tests.m */; };
+		0260C2CF1B855F9C00FF797A /* NSString+DSStringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260C2CE1B855F9C00FF797A /* NSString+DSStringCalculator.m */; };
+		0260C2D01B855F9C00FF797A /* NSString+DSStringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260C2CE1B855F9C00FF797A /* NSString+DSStringCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 		0260C2C61B855AC500FF797A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0260C2C71B855AC500FF797A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		0260C2CC1B855BAB00FF797A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0260C2CD1B855F9C00FF797A /* NSString+DSStringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSStringCalculator.h"; sourceTree = "<group>"; };
+		0260C2CE1B855F9C00FF797A /* NSString+DSStringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSStringCalculator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				0260C2B81B855A8A00FF797A /* main.m */,
+				0260C2CD1B855F9C00FF797A /* NSString+DSStringCalculator.h */,
+				0260C2CE1B855F9C00FF797A /* NSString+DSStringCalculator.m */,
 			);
 			path = StringCalculator;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0260C2B91B855A8A00FF797A /* main.m in Sources */,
+				0260C2CF1B855F9C00FF797A /* NSString+DSStringCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0260C2C81B855AC500FF797A /* Tests.m in Sources */,
+				0260C2D01B855F9C00FF797A /* NSString+DSStringCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,6 @@
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
+#import "NSString+DSStringCalculator.h"
 
 @interface Tests : XCTestCase
 
@@ -9,17 +10,15 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testAddMethodCreated {
+    //1) Create a simple String Calculator with a method  int Add(string numbers)
+    XCTAssert([NSString respondsToSelector:@selector(Add:)], @"Pass");
 }
 
 @end
