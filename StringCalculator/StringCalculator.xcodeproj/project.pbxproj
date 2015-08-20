@@ -29,6 +29,7 @@
 		0260C2C31B855AC500FF797A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0260C2C61B855AC500FF797A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0260C2C71B855AC500FF797A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		0260C2CC1B855BAB00FF797A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		0260C2AC1B855A8A00FF797A = {
 			isa = PBXGroup;
 			children = (
+				0260C2CC1B855BAB00FF797A /* README.md */,
 				0260C2B71B855A8A00FF797A /* StringCalculator */,
 				0260C2C41B855AC500FF797A /* Tests */,
 				0260C2B61B855A8A00FF797A /* Products */,
