@@ -18,7 +18,17 @@
     numbers = [NSString parseNumbersString:numbers forDelimiters:&delimiters];
     NSArray* strValues = [numbers componentsSeparatedByCharactersInSet:delimiters];
     for (NSString *strValue in strValues) {
-        sum += [strValue integerValue];
+        NSInteger v = [strValue integerValue];
+        if(v<0) {
+            NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
+                return 0>[evaluatedObject integerValue];
+            }];
+            NSArray* negatives = [strValues filteredArrayUsingPredicate:predicate];
+            NSString* raised = [NSString stringWithFormat:@"negatives not allowed %@", [negatives componentsJoinedByString:@","]];
+            [NSException raise:raised format:@""];
+        }
+        
+        sum += v;
     }
     return sum;
 }

@@ -51,5 +51,18 @@
     XCTAssertEqual(3, [NSString Add:@"//;\n1;2"]);
 }
 
+- (void)testExceptionOnNegative {
+    // Calling Add with a negative number will throw an exception “negatives
+    // not allowed” - and the negative that was passed.if there are multiple
+    // negatives, show all of them in the exception message
+    //zXCTAssertThrowsSpecificNamed([NSString Add:@"2, -1"], NSException, @"negatives not allowed -1");
+    XCTAssertThrowsSpecificNamed([NSString Add:@"2,-1,-3,-4"], NSException, @"negatives not allowed -1,-3,-4");
+}
+
+-(void)testIgnoreBigNumbers {
+    // Numbers bigger than 1000 should be ignored, so adding 2 + 1001  = 2
+    XCTAssertEqual(2, [NSString Add:@"2,1001"]);
+    
+}
 
 @end
