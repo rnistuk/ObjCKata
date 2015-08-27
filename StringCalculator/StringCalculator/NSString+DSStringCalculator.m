@@ -27,8 +27,7 @@
             NSString* raised = [NSString stringWithFormat:@"negatives not allowed %@", [negatives componentsJoinedByString:@","]];
             [NSException raise:raised format:@""];
         }
-        
-        sum += v;
+        sum += v < 1000 ? v : 0.0;
     }
     return sum;
 }
