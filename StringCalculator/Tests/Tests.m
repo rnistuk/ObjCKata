@@ -64,6 +64,14 @@
     XCTAssertEqual(2, [NSString Add:@"2,1001"]);
 }
 
+-(void) testMultiCharacterDelimiters {
+    // Delimiters can be of any length with the following format:
+    // “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
+    XCTAssertEqual(6, [NSString Add:@"//[***]\n1***2***3"]);
+    
+    XCTAssertEqual(11, [NSString Add:@"//[***][adddbc]\n1***2***3adddbc5"]);
+}
+
 
 
 @end
