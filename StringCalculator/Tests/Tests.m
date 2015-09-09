@@ -72,6 +72,10 @@
     XCTAssertEqual(11, [NSString Add:@"//[***][adddbc]\n1***2***3adddbc5"]);
 }
 
+-(void) testMultipleDelimiters {
+    XCTAssertEqual(6, [NSString Add:@"//[*][%]\n1*2%3"]);
+}
+
 
 
 @end
